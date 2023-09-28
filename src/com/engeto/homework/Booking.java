@@ -1,62 +1,62 @@
 package com.engeto.homework;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Booking {
-    private Room roomNumber;
-    private Guest guestFirstName;
-    private Guest guestLastName;
-    private LocalDate reservationFrom;
-    private LocalDate reservationTo;
+    private Room room;
+    private Guest guest;
+    private LocalDate dateFrom;
+    private LocalDate dateTo;
 
     //Konstruktor
-    public Booking(Room roomNumber, Guest guestFirstName, Guest guestLastName, LocalDate reservationFrom, LocalDate reservationTo) {
-        this.roomNumber = roomNumber;
-        this.guestFirstName = guestFirstName;
-        this.guestLastName = guestLastName;
-        this.reservationFrom = reservationFrom;
-        this.reservationTo = reservationTo;
+
+    public Booking(Room room, Guest guest, LocalDate dateFrom, LocalDate dateTo) {
+        this.room = room;
+        this.guest = guest;
+        this.dateFrom = dateFrom;
+        this.dateTo = dateTo;
     }
 
-    //Getter a Settery
-
-    public Room getRoomNumber() {
-        return roomNumber;
+        public Room getRoom() {
+        return room;
     }
 
-    public void setRoomNumber(Room roomNumber) {
-        this.roomNumber = roomNumber;
+    public void setRoom(Room room) {
+        this.room = room;
     }
 
-    public Guest getGuestFirstName() {
-        return guestFirstName;
+    public Guest getGuest() {
+        return guest;
     }
 
-    public void setGuestFirstName(Guest guestFirstName) {
-        this.guestFirstName = guestFirstName;
+    public void setGuest(Guest guest) {
+        this.guest = guest;
     }
 
-    public Guest getGuestLastName() {
-        return guestLastName;
+    public LocalDate getDateFrom() {
+        return dateFrom;
     }
 
-    public void setGuestLastName(Guest guestLastName) {
-        this.guestLastName = guestLastName;
+    public void setDateFrom(LocalDate dateFrom) {
+        this.dateFrom = dateFrom;
     }
 
-    public LocalDate getReservationFrom() {
-        return reservationFrom;
+    public LocalDate getDateTo() {
+        return dateTo;
     }
 
-    public void setReservationFrom(LocalDate reservationFrom) {
-        this.reservationFrom = reservationFrom;
+    public void setDateTo(LocalDate dateTo) {
+        this.dateTo = dateTo;
     }
 
-    public LocalDate getReservationTo() {
-        return reservationTo;
-    }
-
-    public void setReservationTo(LocalDate reservationTo) {
-        this.reservationTo = reservationTo;
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "room=" + room +
+                ", guest=" + guest +
+                ", dateFrom:" + dateFrom +
+                ", dateTo:" + dateTo +
+                '}';
     }
 }

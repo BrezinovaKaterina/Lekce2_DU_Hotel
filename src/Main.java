@@ -1,3 +1,4 @@
+import com.engeto.homework.Booking;
 import com.engeto.homework.Guest;
 import com.engeto.homework.Room;
 
@@ -14,6 +15,10 @@ public class Main {
 
         System.out.println(guest1.getGuestFirstName()+" "+guest1.getQuestLastName()+" ("+guest1.getGuestBirthDate()+")");
 
+        List<Guest> listOfGuests = new ArrayList<>();
+        listOfGuests.add(guest1);
+        listOfGuests.add(guest2);
+
         //2. Vytvoření pokojů, výpis na obrazovku + popis
         Room room1 = new Room (1);
         Room room2 = new Room (2);
@@ -25,6 +30,15 @@ public class Main {
         roomList.add(room3);
 
         System.out.println(roomList);
+
+
+        //3. Booking
+        Booking booking1 = new Booking (room1, guest1, LocalDate.of(2021,7,19), LocalDate.of(2021,7,26));
+
+        List<Booking> listOfBookings = new ArrayList<>();
+        listOfBookings.add(booking1);
+
+        System.out.println(listOfBookings);
 
     }
 }

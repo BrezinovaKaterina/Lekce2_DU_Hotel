@@ -81,7 +81,7 @@ public class Room {
                 ", countOfBed: " + countOfBed +
                 ", balcony:" + balcony +
                 ", seaView:" + seaView +
-                ", prise: " + pricePerNight+ " CZK"+
+                ", price: " + pricePerNight+ " CZK"+
                 '}';
     }
 }

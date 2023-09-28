@@ -44,4 +44,13 @@ public class Guest {
     }
 
     //endregion
+
+
+    @Override
+    public String toString() {
+        return "Guest{" +
+                "guest Name'" + guestFirstName +" "+ questLastName + '\'' +
+                ", BirthDate:" + guestBirthDate +
+                '}';
+    }
 }
