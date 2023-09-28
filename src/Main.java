@@ -34,11 +34,10 @@ public class Main {
 
         //3. Booking
         Booking booking1 = new Booking (room1, guest1, LocalDate.of(2021,7,19), LocalDate.of(2021,7,26));
+        Booking booking2 = new Booking (room3, guest1, LocalDate.of(2021,9,1), LocalDate.of(2021,9,14),listOfGuests);
 
-        List<Booking> listOfBookings = new ArrayList<>();
-        listOfBookings.add(booking1);
 
-        System.out.println(listOfBookings);
+        System.out.println();
 
     }
 }
