@@ -4,14 +4,14 @@ import java.time.LocalDate;
 
 public class Guest {
     private String guestFirstName;
-    private String questLastName;
+    private String guestLastName;
     private LocalDate guestBirthDate;
 
     //region Konstruktor (guest)
 
-    public Guest(String guestFirstName, String questLastName, LocalDate guestBirthDate) {
+    public Guest(String guestFirstName, String guestLastName, LocalDate guestBirthDate) {
         this.guestFirstName = guestFirstName;
-        this.questLastName = questLastName;
+        this.guestLastName = guestLastName;
         this.guestBirthDate = guestBirthDate;
     }
 
@@ -28,11 +28,11 @@ public class Guest {
     }
 
     public String getQuestLastName() {
-        return questLastName;
+        return guestLastName;
     }
 
     public void setQuestLastName(String questLastName) {
-        this.questLastName = questLastName;
+        this.guestLastName = questLastName;
     }
 
     public LocalDate getGuestBirthDate() {
@@ -49,7 +49,7 @@ public class Guest {
     @Override
     public String toString() {
         return "Guest{" +
-                "guest Name:" + guestFirstName +" "+ questLastName +
+                "guest Name:" + guestFirstName +" "+ guestLastName +
                 ", BirthDate:" + guestBirthDate +
                 '}';
     }

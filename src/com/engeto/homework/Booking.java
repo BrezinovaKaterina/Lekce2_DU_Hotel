@@ -10,6 +10,7 @@ public class Booking {
     private LocalDate dateTo;
     private List<Guest> otherGuests;
 
+
     //Konstruktor
 
     public Booking(Room room, Guest guest, LocalDate dateFrom, LocalDate dateTo, List<Guest> otherGuests) {
@@ -19,14 +20,9 @@ public class Booking {
         this.dateTo = dateTo;
         this.otherGuests = otherGuests;
     }
-    public Booking(Room room, Guest guest, LocalDate dateFrom, LocalDate dateTo) {
-        this.room = room;
-        this.guest = guest;
-        this.dateFrom = dateFrom;
-        this.dateTo = dateTo;
-    }
 
-    // Gettery a Settery
+    //Gettery a Settery
+
 
     public Room getRoom() {
         return room;
@@ -66,5 +62,15 @@ public class Booking {
 
     public void setOtherGuests(List<Guest> otherGuests) {
         this.otherGuests = otherGuests;
+    }
+
+    @Override
+    public String toString() {
+        return "Booking:" +
+                "room:" + room +
+                ", guest:" + guest +
+                ", dateFrom:" + dateFrom +
+                ", dateTo:" + dateTo +
+                ", otherGuests:" + otherGuests;
     }
 }

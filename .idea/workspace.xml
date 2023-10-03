@@ -8,7 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engeto/homework/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/homework/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/homework/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/homework/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/homework/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/homework/Guest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695930203537</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lekce2_DU_Hotel&#10;&#10;část 1 a 2">
+      <option name="closed" value="true" />
+      <created>1696360241477</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696360241477</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
