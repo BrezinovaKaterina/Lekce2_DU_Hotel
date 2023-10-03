@@ -19,13 +19,14 @@ public class Booking {
         this.dateTo = dateTo;
         this.otherGuests = otherGuests;
     }
-
     public Booking(Room room, Guest guest, LocalDate dateFrom, LocalDate dateTo) {
         this.room = room;
         this.guest = guest;
         this.dateFrom = dateFrom;
         this.dateTo = dateTo;
     }
+
+    // Gettery a Settery
 
     public Room getRoom() {
         return room;
@@ -59,4 +60,11 @@ public class Booking {
         this.dateTo = dateTo;
     }
 
+    public List<Guest> getOtherGuests() {
+        return otherGuests;
+    }
+
+    public void setOtherGuests(List<Guest> otherGuests) {
+        this.otherGuests = otherGuests;
+    }
 }

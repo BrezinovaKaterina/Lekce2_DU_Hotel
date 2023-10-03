@@ -17,14 +17,6 @@ public class Room {
         this.pricePerNight = pricePerNight;
     }
 
-    public Room(int roomNumber) {
-        this(roomNumber,1,true,true,1000);
-    }
-
-    public Room(int roomNumber, int countOfBed) {
-        this(roomNumber,countOfBed,false,true,2400);
-    }
-
     //endregion
 
 
@@ -76,12 +68,11 @@ public class Room {
 
     @Override
     public String toString() {
-        return "Room{" +
-                "roomNumber: " + roomNumber +
+        return "Room number:" + roomNumber +
                 ", countOfBed: " + countOfBed +
                 ", balcony:" + balcony +
                 ", seaView:" + seaView +
-                ", price: " + pricePerNight+ " CZK"+
-                '}';
+                ", price: " + pricePerNight+ " CZK/per night";
+
     }
 }
