@@ -27,12 +27,12 @@ public class Guest {
         this.guestFirstName = guestFirstName;
     }
 
-    public String getQuestLastName() {
+    public String getGuestLastName() {
         return guestLastName;
     }
 
-    public void setQuestLastName(String questLastName) {
-        this.guestLastName = questLastName;
+    public void setQuestLastName(String guestLastName) {
+        this.guestLastName = guestLastName;
     }
 
     public LocalDate getGuestBirthDate() {
@@ -48,8 +48,7 @@ public class Guest {
 
     @Override
     public String toString() {
-        return "Guest{" +
-                "guest Name:" + guestFirstName +" "+ guestLastName +
+        return "Guest Name:" + guestFirstName +" "+ guestLastName +
                 ", BirthDate:" + guestBirthDate +
                 '}';
     }

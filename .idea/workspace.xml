@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92f9b454-d5bc-4b61-95bc-52f299286a39" name="Changes" comment="Lekce2_DU_Hotel&#10;&#10;část 1 a 2">
+    <list default="true" id="92f9b454-d5bc-4b61-95bc-52f299286a39" name="Changes" comment="Lekce2_DU_Hotel&#10;&#10;1. Vytvoření hostů a výpis na obrazovku&#10;2. Vytvoření pokojů, výpis na obrazovku + popis&#10;3. Booking">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/homework/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/homework/Booking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engeto/homework/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/homework/Guest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,11 +96,20 @@
       <option name="project" value="LOCAL" />
       <updated>1696360241477</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lekce2_DU_Hotel&#10;&#10;1. Vytvoření hostů a výpis na obrazovku&#10;2. Vytvoření pokojů, výpis na obrazovku + popis&#10;3. Booking">
+      <option name="closed" value="true" />
+      <created>1696368535874</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696368535874</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lekce2_DU_Hotel&#10;&#10;část 1 a 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lekce2_DU_Hotel&#10;&#10;část 1 a 2" />
+    <MESSAGE value="Lekce2_DU_Hotel&#10;&#10;1. Vytvoření hostů a výpis na obrazovku&#10;2. Vytvoření pokojů, výpis na obrazovku + popis&#10;3. Booking" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lekce2_DU_Hotel&#10;&#10;1. Vytvoření hostů a výpis na obrazovku&#10;2. Vytvoření pokojů, výpis na obrazovku + popis&#10;3. Booking" />
   </component>
 </project>

@@ -12,11 +12,11 @@ public class Main {
         //1. Vytvoření hostů a výpis na obrazovku
         Guest guest1 = new Guest("Adéla","Malíková", LocalDate.of(1993,3,13));
         Guest guest2 = new Guest("Jan","Dvořáček",LocalDate.of(1995,5,5));
-        Guest noGuest = new Guest("-","-",LocalDate.MIN);
+        Guest noGuest = new Guest("no guest","",LocalDate.of(1900,1,1));
 
-        System.out.println(guest1.getGuestFirstName()+" "+guest1.getQuestLastName()+" ("+guest1.getGuestBirthDate()+")");
-        System.out.println(guest2.getGuestFirstName()+" "+guest2.getQuestLastName()+" ("+guest2.getGuestBirthDate()+")");
-        System.out.println(noGuest.getGuestFirstName()+" "+noGuest.getQuestLastName()+" ("+noGuest.getGuestBirthDate()+")");
+        System.out.println(guest1.getGuestFirstName()+" "+guest1.getGuestLastName()+" ("+guest1.getGuestBirthDate()+")");
+        System.out.println(guest2.getGuestFirstName()+" "+guest2.getGuestLastName()+" ("+guest2.getGuestBirthDate()+")");
+        System.out.println(noGuest.getGuestFirstName()+" "+noGuest.getGuestLastName()+" ("+noGuest.getGuestBirthDate()+")");
 
         List<Guest> otherGuests = new ArrayList<>();
         otherGuests.add(noGuest);
@@ -51,19 +51,15 @@ public class Main {
 
         System.out.println("***");
 
-        int i;
-        for (Guest number : otherGuests) {
         System.out.println(
                 "Detail rezervace: room number: "+booking1.getRoom().getRoomNumber()
-                +", Host: "+booking1.getGuest().getQuestLastName()+" "+booking1.getGuest().getGuestFirstName()
-                +" , from: "+booking1.getDateFrom()+" , to:"+booking1.getDateTo()+" ,other guest: "+number.getQuestLastName()+" "+number.getGuestFirstName());
-    }
+                +", Host: "+booking1.getGuest().getGuestLastName()+" "+booking1.getGuest().getGuestFirstName()
+                +", from: "+booking1.getDateFrom()+", to:"+booking1.getDateTo()+", other guest: "+booking1.getOtherGuests().get(0));
 
-        for (Guest number : otherGuests) {
         System.out.println(
-                "Detail rezervace: room number: "+booking2.getRoom().getRoomNumber()
-                        +", Host: "+booking2.getGuest().getQuestLastName()+" "+booking2.getGuest().getGuestFirstName()
-                        +" , from: "+booking1.getDateFrom()+" , to:"+booking1.getDateTo()+" ,other guest: "+number.getQuestLastName()+" "+number.getGuestFirstName());
-    }
+        "Detail rezervace: room number: "+booking2.getRoom().getRoomNumber()
+                +", Host: "+booking2.getGuest().getGuestLastName()+" "+booking2.getGuest().getGuestFirstName()
+                +", from: "+booking2.getDateFrom()+", to:"+booking2.getDateTo()+", other guest: "+booking2.getOtherGuests().get(1));
+
     }
 }
