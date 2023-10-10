@@ -51,15 +51,27 @@ public class Main {
 
         System.out.println("***");
 
-        System.out.println(
-                "Detail rezervace: room number: "+booking1.getRoom().getRoomNumber()
-                +", Host: "+booking1.getGuest().getGuestLastName()+" "+booking1.getGuest().getGuestFirstName()
-                +", from: "+booking1.getDateFrom()+", to:"+booking1.getDateTo()+", other guest: "+booking1.getOtherGuests().get(0));
+//        System.out.println(
+//                "Detail rezervace: room number: "+booking1.getRoom().getRoomNumber()
+//                +", Host: "+booking1.getGuest().getGuestLastName()+" "+booking1.getGuest().getGuestFirstName()
+//                +", from: "+booking1.getDateFrom()+", to:"+booking1.getDateTo()+", other guest: "+booking1.getOtherGuests().get(0));
+//
+//        System.out.println(
+//        "Detail rezervace: room number: "+booking2.getRoom().getRoomNumber()
+//                +", Host: "+booking2.getGuest().getGuestLastName()+" "+booking2.getGuest().getGuestFirstName()
+//                +", from: "+booking2.getDateFrom()+", to:"+booking2.getDateTo()+", other guest: "+booking2.getOtherGuests().get(1));
 
-        System.out.println(
-        "Detail rezervace: room number: "+booking2.getRoom().getRoomNumber()
-                +", Host: "+booking2.getGuest().getGuestLastName()+" "+booking2.getGuest().getGuestFirstName()
-                +", from: "+booking2.getDateFrom()+", to:"+booking2.getDateTo()+", other guest: "+booking2.getOtherGuests().get(1));
-
+        for (Booking booking : listOfBooking) {
+            System.out.print(
+                    "Detail rezervace: room number: " + booking.getRoom().getRoomNumber()
+                            + ", Host: " + booking.getGuest().getGuestLastName() + " " + booking.getGuest().getGuestFirstName()
+                            + ", from: " + booking.getDateFrom() + ", to:" + booking.getDateTo());
+            List<Guest> others = booking.getOtherGuests();
+            if (! others.isEmpty()) {
+                System.out.print(", other guests: ");
+                for (Guest guest : others) System.out.print(guest.getGuestFirstName()+" "+guest.getGuestLastName()+", ");
+            }
+            System.out.println();
     }
+}
 }
